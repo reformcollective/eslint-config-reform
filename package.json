@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-reform",
+  "name": "eslint-config-reform-collective",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {   
+  "dependencies": {
     "@rjwadley/eslint-plugin-format-gsap": "^0.1.1",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
@@ -18,7 +18,7 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.1",
-    "eslint-plugin-function-component-export": "^0.0.8",
+    "eslint-plugin-function-component-export": "^0.0.9",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-ssr-friendly": "^1.0.6",
