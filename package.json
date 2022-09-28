@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-reform-collective",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.1",
-    "eslint-plugin-function-component-export": "^0.0.10",
+    "eslint-plugin-function-component-export": "^0.0.11",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-ssr-friendly": "^1.0.6",
