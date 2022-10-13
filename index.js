@@ -88,6 +88,9 @@ module.exports = {
     "function-component-export/ban-FC": "error",
     "function-component-export/combine-default-export": "error",
 
+    // allow expressions in fragments
+    "react/jsx-no-useless-fragment": ["error", { allowExpressions: true }],
+
     /**
      *  Temporary Rules
      */
