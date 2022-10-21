@@ -1,6 +1,20 @@
 module.exports = {
-  plugins: ["@rjwadley/format-gsap", "ssr-friendly", "sort-styled-components", "styled-components-a11y", "function-component-export"],
-  extends: ["plugin:ssr-friendly/recommended", "airbnb", "airbnb/hooks", "airbnb-typescript", "plugin:styled-components-a11y/recommended", "plugin:prettier/recommended"],
+  plugins: [
+    "@rjwadley/format-gsap",
+    "ssr-friendly",
+    "sort-styled-components",
+    "styled-components-a11y",
+    "function-component-export",
+  ],
+  extends: [
+    "plugin:ssr-friendly/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:styled-components-a11y/recommended",
+    "plugin:prettier/recommended",
+  ],
   rules: {
     /**
      *  Mandatory Rules
