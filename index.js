@@ -11,6 +11,7 @@ module.exports = {
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:styled-components-a11y/recommended",
     "plugin:prettier/recommended",
   ],
@@ -74,7 +75,7 @@ module.exports = {
     "max-lines": [
       "warn",
       {
-        max: 200,
+        max: 400,
         skipBlankLines: true,
         skipComments: true,
       },
