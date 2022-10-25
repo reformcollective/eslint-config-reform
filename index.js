@@ -92,6 +92,9 @@ module.exports = {
     // allow expressions in fragments
     "react/jsx-no-useless-fragment": ["error", { allowExpressions: true }],
 
+    // allow console.error
+    "no-console": ["error", { allow: ["error"] }],
+
     /**
      *  Temporary Rules
      */
