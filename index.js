@@ -5,12 +5,14 @@ module.exports = {
     "sort-styled-components",
     "styled-components-a11y",
     "function-component-export",
+    "listeners",
   ],
   extends: [
     "plugin:ssr-friendly/recommended",
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
+    "plugin:listeners/strict",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:styled-components-a11y/recommended",
     "plugin:prettier/recommended",
@@ -34,7 +36,7 @@ module.exports = {
     // we define styled components at the bottom, which is better for readability but incompatible with this rule
     "@typescript-eslint/no-use-before-define": "off",
 
-    // any custom hooks that take dependecies need to be specified here
+    // any custom hooks that take dependencies need to be specified here
     "react-hooks/exhaustive-deps": [
       "error",
       {
