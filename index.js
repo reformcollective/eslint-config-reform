@@ -99,6 +99,9 @@ module.exports = {
     // allow console.error
     "no-console": ["error", { allow: ["error"] }],
 
+    // check fragments for keys
+    "react/jsx-key": ["error", { "checkFragmentShorthand": true }],
+
     /**
      *  Temporary Rules
      */
