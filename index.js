@@ -102,6 +102,9 @@ module.exports = {
     // check fragments for keys
     "react/jsx-key": ["error", { "checkFragmentShorthand": true }],
 
+    // allow prop spreading (since we're using typescript)
+    "react/jsx-props-no-spreading": "off",
+
     /**
      *  Temporary Rules
      */
