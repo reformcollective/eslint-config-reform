@@ -105,6 +105,9 @@ module.exports = {
     // allow prop spreading (since we're using typescript)
     "react/jsx-props-no-spreading": "off",
 
+    // disable unknown prop warnings (since we're using typescript)
+    "react/no-unknown-property": "off",
+
     /**
      *  Temporary Rules
      */
