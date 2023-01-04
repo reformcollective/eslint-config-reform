@@ -18,6 +18,7 @@ module.exports = {
     "plugin:styled-components-a11y/recommended",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
+    "plugin:react/jsx-runtime",
   ],
   rules: {
     /**
@@ -100,7 +101,7 @@ module.exports = {
     "no-console": ["error", { allow: ["error"] }],
 
     // check fragments for keys
-    "react/jsx-key": ["error", { "checkFragmentShorthand": true }],
+    "react/jsx-key": ["error", { checkFragmentShorthand: true }],
 
     // allow prop spreading (since we're using typescript)
     "react/jsx-props-no-spreading": "off",
