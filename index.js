@@ -15,6 +15,7 @@ module.exports = {
     "airbnb-typescript",
     "plugin:listeners/strict",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict",
     "plugin:styled-components-a11y/recommended",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
