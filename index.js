@@ -7,6 +7,7 @@ module.exports = {
     "function-component-export",
     "listeners",
     "react",
+    "@typescript-eslint",
   ],
   extends: [
     "plugin:ssr-friendly/recommended",
