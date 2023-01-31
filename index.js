@@ -50,13 +50,8 @@ module.exports = {
       },
     ],
 
-    // use inline default props instead of defaultProps
-    "react/require-default-props": [
-      "error",
-      {
-        functions: "defaultArguments",
-      },
-    ],
+    // this rule has issues
+    "react/require-default-props": false,
 
     // import order
     "import/order": [
