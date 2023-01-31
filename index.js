@@ -51,7 +51,7 @@ module.exports = {
     ],
 
     // this rule has issues
-    "react/require-default-props": false,
+    "react/require-default-props": "off",
 
     // import order
     "import/order": [
