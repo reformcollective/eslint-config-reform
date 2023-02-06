@@ -1,43 +1,51 @@
 module.exports = {
   plugins: [
     "@rjwadley/format-gsap",
-    "ssr-friendly",
-    "sort-styled-components",
-    "styled-components-a11y",
+    "@typescript-eslint",
     "function-component-export",
     "listeners",
     "react",
-    "@typescript-eslint",
+    "sort-styled-components",
+    "ssr-friendly",
+    "styled-components-a11y",
   ],
   extends: [
-    "plugin:ssr-friendly/recommended",
+    /**
+     * The base for this config is airbnb
+     */
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
-    "plugin:listeners/strict",
+    /**
+     * Bring in @typescript-eslint rules and react rules for TS checking
+     */
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:@typescript-eslint/strict",
-    "plugin:styled-components-a11y/recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react/jsx-runtime",
+    /**
+     * and some utility plugins with extra rules
+     */
+    "plugin:ssr-friendly/recommended", // no window access
+    "plugin:listeners/strict", // strict event listeners
+    "plugin:styled-components-a11y/recommended", // a11y for styled components
+    "plugin:prettier/recommended", // disable any pure style rules
   ],
   rules: {
     /**
      *  Mandatory Rules
      */
 
-    // our format style for gsap
+    // tighter, more legible formatting for GSAP functions
     "@rjwadley/format-gsap/compact-functions": "error",
-
-    // sort styled components
-    "sort-styled-components/sort-styled-components": "warn",
-    // complementary rule to sort styled components
-    "no-multiple-empty-lines": "warn",
-
     // prettier will conflict with gsap formatter
     "prettier/prettier": "off",
+
+    // sort styled components based on their usage order
+    "sort-styled-components/sort-styled-components": "warn",
+    // complementary rule to sort styled components (remove extra space)
+    "no-multiple-empty-lines": "warn",
 
     // we define styled components at the bottom, which is better for readability but incompatible with this rule
     "@typescript-eslint/no-use-before-define": "off",
@@ -50,7 +58,7 @@ module.exports = {
       },
     ],
 
-    // this rule has issues
+    // this rule has issues with TS
     "react/require-default-props": "off",
 
     // import order
@@ -74,7 +82,7 @@ module.exports = {
       },
     ],
 
-    // max lines per file of 200
+    // encourage shorter files
     "max-lines": [
       "warn",
       {
@@ -86,9 +94,8 @@ module.exports = {
 
     // ban bad types
     "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/ban-types": "error",
 
-    // export style
+    // consistent export style
     "function-component-export/ban-FC": "error",
     "function-component-export/combine-default-export": "error",
 
@@ -98,22 +105,22 @@ module.exports = {
     // allow console.error
     "no-console": ["error", { allow: ["error"] }],
 
-    // check fragments for keys
+    // check for keys when needed
     "react/jsx-key": ["error", { checkFragmentShorthand: true }],
 
-    // allow prop spreading (since we're using typescript)
+    // disable rules that typescript handles
     "react/jsx-props-no-spreading": "off",
-
-    // disable unknown prop warnings (since we're using typescript)
     "react/no-unknown-property": "off",
 
     /**
-     *  Temporary Rules
+     *  Optional Rules
      */
-    // i just know everyone would cry about these lmao
     "consistent-return": "off",
     "no-nested-ternary": "warn",
   },
+  /**
+   * parser setup
+   */
   parserOptions: {
     project: ["./tsconfig.json"],
   },
