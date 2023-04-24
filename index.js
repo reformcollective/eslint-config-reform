@@ -97,8 +97,6 @@ module.exports = {
     // disable secrets and PII rules (they don't really apply to us)
     "no-secrets/no-secrets": "off",
     "pii/no-phone-number": "off",
-    "pii/no-email": "error",
-    "pii/no-dob": "warn",
 
     /**
      *  Optional or Temporary Rules
@@ -126,6 +124,8 @@ module.exports = {
   },
   parserOptions: {
     project: ["./tsconfig.json"],
+    // we also lint html, md, and json files
+    extraFileExtensions: [".html", ".md", ".json"],
   },
   settings: {
     "import/resolver": {
@@ -135,4 +135,6 @@ module.exports = {
       version: "detect",
     },
   },
+  // ignore these files
+  ignorePatterns: ["/*.json"],
 };
