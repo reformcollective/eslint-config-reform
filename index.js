@@ -70,12 +70,16 @@ module.exports = {
     // ban bad types
     "@typescript-eslint/no-explicit-any": "error",
 
-    // disallow shadowing
+    // disallow shadowing variable names
     "@typescript-eslint/no-shadow": "error",
 
     // consistent export style
     "function-component-export/ban-FC": "error",
     "function-component-export/combine-default-export": "error",
+
+    // prefer more concise syntaxes
+    "react/jsx-boolean-value": ["error", "never"],
+    "object-shorthand": ["error", "always"],
 
     // allow warn, error, and info in console
     // leave this disabled locally, but enable it in CI
