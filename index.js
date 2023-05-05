@@ -106,6 +106,10 @@ module.exports = {
      *  Optional or Temporary Rules
      */
 
+    // These rules conflict with Radix UI
+    "styled-components-a11y/iframe-has-title": "off",
+    "styled-components-a11y/html-has-lang": "off",
+
     // we can remove this once TS 5.1 drops
     "react/jsx-no-useless-fragment": ["error", { allowExpressions: true }],
 
