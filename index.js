@@ -24,6 +24,8 @@ module.exports = {
     "plugin:prettier/recommended", // disable any pure style rules (of which there should be none)
     "plugin:ssr-friendly/recommended", // no window access
     "plugin:styled-components-a11y/recommended", // a11y for styled components
+    "plugin:import/recommended", // rules for valid imports
+    "plugin:import/typescript", // rules for valid imports
   ],
   plugins: [
     "@typescript-eslint",
@@ -37,6 +39,7 @@ module.exports = {
     "sort-styled-components",
     "ssr-friendly",
     "styled-components-a11y",
+    "import",
   ],
   env: {
     browser: true,
@@ -66,6 +69,13 @@ module.exports = {
         skipComments: true,
       },
     ],
+
+    // disallow import cycling
+    "import/no-cycle": "error",
+    // disallow imports in body of file
+    "import/first": "error",
+    // disallow wildcard imports
+    "import/no-namespace": "error",
 
     // ban bad types
     "@typescript-eslint/no-explicit-any": "error",
