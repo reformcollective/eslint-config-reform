@@ -76,6 +76,8 @@ module.exports = {
     "import/first": "error",
     // disallow wildcard imports
     "import/no-namespace": "error",
+    // always include a newline after imports
+    "import/newline-after-import": "error",
 
     // ban bad types
     "@typescript-eslint/no-explicit-any": "error",
