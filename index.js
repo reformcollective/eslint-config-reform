@@ -74,10 +74,10 @@ module.exports = {
     "import/no-cycle": "error",
     // disallow imports in body of file
     "import/first": "error",
-    // disallow wildcard imports
-    "import/no-namespace": "error",
     // always include a newline after imports
     "import/newline-after-import": "error",
+    // typescript handles this for us
+    "import/no-unresolved": "off",
 
     // ban bad types
     "@typescript-eslint/no-explicit-any": "error",
