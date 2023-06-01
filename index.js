@@ -24,8 +24,6 @@ module.exports = {
     "plugin:prettier/recommended", // disable any pure style rules (of which there should be none)
     "plugin:ssr-friendly/recommended", // no window access
     "plugin:styled-components-a11y/recommended", // a11y for styled components
-    "plugin:import/recommended", // rules for valid imports
-    "plugin:import/typescript", // rules for valid imports
   ],
   plugins: [
     "@typescript-eslint",
@@ -76,8 +74,8 @@ module.exports = {
     "import/first": "error",
     // always include a newline after imports
     "import/newline-after-import": "error",
-    // typescript handles this for us
-    "import/no-unresolved": "off",
+    // no duplicate imports
+    "import/no-duplicates": "error",
 
     // ban bad types
     "@typescript-eslint/no-explicit-any": "error",
