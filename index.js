@@ -142,8 +142,8 @@ module.exports = {
   },
   parserOptions: {
     project: ["./tsconfig.json"],
-    // we also lint html, md, and json files
-    extraFileExtensions: [".html", ".md", ".json"],
+    // we also lint json files
+    extraFileExtensions: [".json"],
   },
   settings: {
     "import/resolver": {
@@ -153,6 +153,6 @@ module.exports = {
       version: "detect",
     },
   },
-  // ignore these files
+  // ignore json files in the root directory
   ignorePatterns: ["/*.json"],
 };
