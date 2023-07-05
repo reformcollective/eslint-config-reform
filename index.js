@@ -90,6 +90,7 @@ module.exports = {
     // prefer more concise syntaxes
     "react/jsx-boolean-value": ["error", "never"],
     "object-shorthand": ["error", "always"],
+    "prefer-template": "error",
 
     // allow warn, error, and info in console
     // leave this disabled locally, but enable it in CI
