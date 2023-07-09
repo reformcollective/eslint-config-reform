@@ -113,6 +113,14 @@ module.exports = {
     "no-secrets/no-secrets": "off",
     "pii/no-phone-number": "off",
 
+    // allow unused args with underscores
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        argsIgnorePattern: "^_",
+      },
+    ],
+
     /**
      *  Optional or Temporary Rules
      */
