@@ -148,6 +148,7 @@ module.exports = {
     "eslint-comments/disable-enable-pair": "off",
     "scanjs-rules/identifier_localStorage": "off",
     "scanjs-rules/assign_to_src": "off",
+    "@typescript-eslint/no-confusing-void-expression": "off",
   },
   parserOptions: {
     project: true,
