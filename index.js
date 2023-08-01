@@ -11,9 +11,8 @@ module.exports = {
      */
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:@typescript-eslint/strict",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     /**
      * and some utility plugins with extra rules
      */
@@ -151,7 +150,7 @@ module.exports = {
     "scanjs-rules/assign_to_src": "off",
   },
   parserOptions: {
-    project: ["./tsconfig.json"],
+    project: true,
     // we also lint json files
     extraFileExtensions: [".json"],
   },
