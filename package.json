@@ -23,6 +23,7 @@
     "eslint-plugin-function-component-export": "^0.0.11",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-jest": "^27.2.3",
     "eslint-plugin-jest-async": "^1.0.3",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
