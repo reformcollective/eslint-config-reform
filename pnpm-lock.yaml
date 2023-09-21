@@ -108,8 +108,8 @@ dependencies:
     specifier: 0.21.0
     version: 0.21.0(eslint@8.49.0)
   eslint-plugin-sort-styled-components:
-    specifier: 0.2.2
-    version: 0.2.2
+    specifier: 0.3.0
+    version: 0.3.0
   eslint-plugin-ssr-friendly:
     specifier: 1.2.0
     version: 1.2.0(eslint@8.49.0)
@@ -1507,8 +1507,8 @@ packages:
       eslint: 8.49.0
     dev: false
 
-  /eslint-plugin-sort-styled-components@0.2.2:
-    resolution: {integrity: sha512-pHH2nCSma4Y9W0t/QaTnSd2z8Um+OBxhfjdgV31SPu6dUTLRWtt0mh1j5kpe3X35cQSdUTLlk39OmPnnDnjV8g==}
+  /eslint-plugin-sort-styled-components@0.3.0:
+    resolution: {integrity: sha512-U+HFEN0qnfNN0vyqMd0SNzXECDs237oF2vkvoZhnJLahPtpcqO1sjTTCaxBgB9CxwSy8WbxYWptCe7rRccVeKg==}
     dependencies:
       eslint: 8.49.0
     transitivePeerDependencies:
