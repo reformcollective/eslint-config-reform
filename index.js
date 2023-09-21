@@ -53,7 +53,12 @@ module.exports = {
     "react-hooks/exhaustive-deps": [
       "error",
       {
-        additionalHooks: "useAnimation|useDeepCompareEffect|useDeepCompareMemo",
+        additionalHooks: `
+            useAnimation 
+        |   useDeepCompareEffect
+        |   useDeepCompareMemo
+        |   useDeepCompareLayoutEffect
+        `.replaceAll(/\s/g, ""),
       },
     ],
 
