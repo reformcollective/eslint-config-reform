@@ -96,7 +96,7 @@ dependencies:
     specifier: 7.33.2
     version: 7.33.2(eslint@8.49.0)
   eslint-plugin-react-hooks:
-    specifier: 4.5.0
+    specifier: ^4.5.0 || 5.0.0-canary-7118f5dd7-20230705
     version: 4.5.0(eslint@8.49.0)
   eslint-plugin-security:
     specifier: 1.7.1
