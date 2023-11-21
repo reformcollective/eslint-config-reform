@@ -149,7 +149,6 @@ module.exports = {
     "max-params": ["warn", 6],
 
     // similar story with these, but I've entirely disabled them
-    "no-nested-ternary": "warn",
     "consistent-return": "off",
     "const-case/uppercase": "off",
     "eslint-comments/disable-enable-pair": "off",
