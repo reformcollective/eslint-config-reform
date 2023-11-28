@@ -90,6 +90,8 @@ module.exports = {
     // consistent export style
     "function-component-export/ban-FC": "error",
     "function-component-export/combine-default-export": "error",
+    // part of export style, this is important for HMR
+    "react/function-component-definition": "warn",
 
     // prefer more concise syntaxes
     "react/jsx-boolean-value": ["error", "never"],
