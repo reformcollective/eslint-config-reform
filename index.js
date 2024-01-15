@@ -158,6 +158,7 @@ module.exports = {
     "scanjs-rules/identifier_localStorage": "off",
     "scanjs-rules/assign_to_src": "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
   },
   parserOptions: {
     project: true,
